@@ -1,0 +1,58 @@
+#requests
+{
+	background-color:#C0966C;
+	position: relative;
+	margin: 125px auto;
+	color:white;
+	height:496px;
+	width: 800px;
+	padding: 10px;
+	-webkit-box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.29);
+	-moz-box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.29);
+	box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.29);
+}
+
+.inp_title
+{
+	display:inline-block;
+	width: 300px;
+	height:25px;
+}
+
+.inp_criteria
+{
+	display:inline-block;
+	width: 300px;
+	height: 150px;
+}
+
+.inp_description
+{
+	display:inline-block;
+	width: 300px;
+	height: 150px;
+}
+
+.inp_value
+{
+	display:inline-block;
+	width:300px;
+	height: 25px;
+}
+
+.inp_expiration
+{
+	display:inline-block;
+	width:300px;
+	height:25px;
+}
+
+.submit_button
+{
+	margin-top: 25px;
+	display:block;
+	background-color:white;
+	color: black;
+	cursor:pointer;
+	text-decoration:none;
+}

@@ -1,0 +1,96 @@
+#bounties
+{
+	position: relative;
+	margin: 50px auto;
+	color:white;
+	width: 50%;
+	padding: 10px;
+}
+
+.bounty
+{
+		height: 500px;
+		width: 800px;
+		color:white;
+		padding: 0px;
+		font-family: Browalia-New;
+		font-size: 13px;
+		font-weight:bold;
+		letter-spacing: 3px;
+		text-decoration:none;
+}
+
+.bounty_title
+{	
+	display:block;
+	width: 500px;
+	height: 50px;
+	background-color: black;
+	border-style:solid;
+    border-radius: 1px;
+    margin: auto;
+    width: 50%;
+ 
+}
+
+.bounty_value
+{
+	display:block;
+	width: 500px;
+	height:50px;
+	background-color: black;
+	border-style:solid;
+    margin: auto;
+    width: 50%;
+}
+
+.bounty_desc
+{
+	display:block;
+	width: 500px;
+	height: 200px;
+	background-color: black;
+	border-style:solid;
+    margin: auto;
+    width: 50%;
+}
+
+.bounty_criteria
+{
+	display:block;
+	width: 500px;
+	height:50px;
+	background-color: black;
+	border-style:solid;
+    margin: auto;
+    width: 50%;
+}
+
+.bounty_expiration
+{
+	display:block;
+	width: 500px;
+	height: 50px;
+	background-color: black;
+	border-style:solid;
+    margin: auto;
+    width: 50%;
+}
+
+.bounty_button
+{
+	color:white;
+	display:block;
+	width: 250px;
+	height:50px;
+	background-color: black;
+	border-style:solid;
+    border-radius: 1px;
+    margin: auto;
+    width: 50%;
+	text-decoration:none;
+}
+
+#bounties a{
+		text-decoration:none;
+}

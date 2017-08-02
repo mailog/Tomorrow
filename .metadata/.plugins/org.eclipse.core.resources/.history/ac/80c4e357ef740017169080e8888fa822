@@ -1,0 +1,43 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Register</title>
+<link rel="stylesheet" type="text/css" href="/css/toolbar.css" />
+<link rel="stylesheet" type="text/css" href="/css/register.css" />
+</head>
+<body>
+
+<div class = "toolbar">
+	<a href = "/">
+		<button class = "tool_button"> Home </button>
+	</a>
+	<a href = "/requests">
+		<button class = "tool_button"> Requests </button>
+	</a>
+	<a href = "/about">
+		<button class = "tool_button"> About </button>
+	</a>
+	<a href = "/contact">
+		<button class = "tool_button"> Contact </button>
+	</a>
+	<a href = "/login">
+		<button class = "tool_button"> Login </button>
+	</a>
+	<a href = "/register">
+		<button class = "tool_button"> Register </button>
+	</a>
+	<a href = "/account">
+		<button class = "tool_button"> Account </button>
+	</a>
+</div>
+
+<div th:if = "${validity}" id = "register">
+	<div class = "label">
+		<p th:text = "'Welcome ' + ${user.username} + ' !'"/>
+	</div>
+</div>
+
+<div th:unless = "${validity}" id = "register">
+	<p th:text = "'Not Welcome!'"/>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+package database;
+
+public class User {
+	public String email;
+	public String username
+	public String password;
+	public User(){	
+		this.email="";
+		this.username = "";
+		this.password = "";
+	}
+	
+	public void setEmail(String email){
+		this.email = email;
+	}
+	
+	public void setPlainPassword(String password){
+		plainPassword = password;
+	}
+	
+	public void setEncryptedPassword(byte[] password){
+		this.encryptedPassword = password;
+		
+	}
+	
+	public String getEmail(){
+		return email;
+	}
+	
+	public String getPlainPassword(){
+		return plainPassword;
+	}
+	
+	public byte[] getEncryptedPassword(){
+		return encryptedPassword;
+	}
+	
+
+}

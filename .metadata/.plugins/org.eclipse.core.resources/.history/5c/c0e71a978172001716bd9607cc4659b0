@@ -1,0 +1,34 @@
+#requests
+{
+	background-color:#000000;
+	position: relative;
+	margin: 50px auto;
+	color:white;
+	width: 50%;
+	padding: 10px;
+}
+
+#title
+{
+	
+}
+
+#criteria
+{
+	
+}
+
+#description
+{
+	
+}
+
+#value
+{
+	
+}
+
+#expiration
+{
+	
+}

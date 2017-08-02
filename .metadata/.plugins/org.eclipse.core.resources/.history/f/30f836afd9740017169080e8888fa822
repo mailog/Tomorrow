@@ -1,0 +1,10 @@
+#account
+{
+	background-color:#000000;
+	position: relative;
+	margin: 125px auto;
+	color:white;
+	height:496px;
+	width: 800px;
+	padding: 10px;
+}

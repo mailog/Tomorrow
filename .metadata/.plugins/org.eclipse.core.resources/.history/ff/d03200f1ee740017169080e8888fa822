@@ -1,0 +1,42 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Account</title>
+<link rel="stylesheet" type="text/css" href="/css/toolbar.css" />
+<link rel="stylesheet" type="text/css" href="/css/account.css" />
+</head>
+<body>
+
+<div class = "toolbar">
+	<a href = "/">
+		<button class = "tool_button"> Home </button>
+	</a>
+	<a href = "/requests">
+		<button class = "tool_button"> Requests </button>
+	</a>
+	<a href = "/about">
+		<button class = "tool_button"> About </button>
+	</a>
+	<a href = "/contact">
+		<button class = "tool_button"> Contact </button>
+	</a>
+	<a href = "/login">
+		<button class = "tool_button"> Login </button>
+	</a>
+	<a href = "/register">
+		<button class = "tool_button"> Register </button>
+	</a>
+	<a href = "/account">
+		<button class = "tool_button"> Account </button>
+	</a>
+</div>
+
+<div id = "account">
+	<p th:text = "'Welcome ' + ${username} + '!'"/>
+	<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam eros sed odio scelerisque, scelerisque dictum lorem tincidunt. Nam ligula dolor, vehicula vel aliquet non, interdum eget odio. Nam tempus augue vitae ipsum aliquam euismod. Cras ut maximus ex. Fusce lobortis, massa in hendrerit venenatis, massa purus luctus purus, id convallis erat ipsum id quam. Donec laoreet augue in facilisis hendrerit. Sed sed neque ut lacus scelerisque volutpat. Praesent nec velit viverra, dignissim leo eu, vehicula urna. Nunc ullamcorper eros vitae leo lobortis luctus sit amet ac nisl. Fusce eget facilisis massa, quis elementum risus. Duis consequat ligula et erat gravida, sed pharetra lectus imperdiet. Fusce pretium gravida aliquam. Suspendisse in arcu at mi congue bibendum. Duis ac nisi nec nunc faucibus consectetur. Nunc eu est malesuada, vehicula ante volutpat, congue quam.
+
+Donec sed metus vel nibh imperdiet molestie id eu ipsum. Aliquam ultricies nisl id mauris malesuada, nec mattis mauris facilisis. Phasellus non nunc in risus malesuada sagittis a quis ex. Phasellus sit amet sapien urna. Phasellus vitae diam vestibulum, pellentesque urna in, pulvinar mauris. Pellentesque arcu felis, facilisis vitae libero eget, pellentesque aliquet mauris. Integer efficitur, magna quis vestibulum ultricies, felis nibh dignissim ligula, eu congue tellus tellus nec magna. Donec a velit quis risus rutrum porttitor. Vestibulum pulvinar facilisis tincidunt. Sed tincidunt eu enim id tincidunt. Nam elementum accumsan augue, at ultricies metus interdum in. 
+	</p>
+</div>
+</body>
+</html>

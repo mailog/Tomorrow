@@ -1,0 +1,57 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Bounties</title>
+<link rel="stylesheet" type="text/css" href="/css/toolbar.css" />
+<link rel="stylesheet" type="text/css" href="/css/bounties.css" />
+</head>
+<body>
+
+<div class = "toolbar">
+	<a href = "/">
+		<button class = "tool_button"> Home </button>
+	</a>
+	<a href = "/bounties">
+		<button class = "tool_button"> Bounties </button>
+	</a>
+	<a href = "/requests">
+		<button class = "tool_button"> Requests </button>
+	</a>
+	<a href = "/about">
+		<button class = "tool_button"> About </button>
+	</a>
+	<a href = "/contact">
+		<button class = "tool_button"> Contact </button>
+	</a>
+	<a href = "/login">
+		<button class = "tool_button"> Login </button>
+	</a>
+	<a href = "/register">
+		<button class = "tool_button"> Register </button>
+	</a>
+</div>
+
+
+<div id = "bounties">
+	<div th:each="bounty, iter : ${bounties}" class = "bounty">
+		<div class = "bounty_title">
+			<p th:text = "${bounty.title}"/>
+		</div>	
+		<div class = "bounty_value">
+			<p th:text = "${bounty.value}"/>
+		</div>
+		<div class = "bounty_desc">
+			<p th:text = "${bounty.description}">
+		</div>
+		<div class = "bounty_criteria">
+			<p th:text = "${bounty.criteria}"/>
+		</div>
+		<div class = "bounty_proposer">
+			<p>Original Proposal By: Placeholder </p>
+		</div>
+		<a href = "/">
+			<button class = "bounty_button"> Check it out! </button>
+		</a>
+	</div>
+</div>
+</body>
+</html>

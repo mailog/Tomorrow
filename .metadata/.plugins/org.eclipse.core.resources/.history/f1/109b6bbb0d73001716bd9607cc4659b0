@@ -1,0 +1,66 @@
+package database;
+import java.io.UnsupportedEncodingException;
+import java.util.List;
+
+import javax.sql.DataSource;
+import org.springframework.jdbc.core.Jdbc;
+import Security.EncryptMethod;
+
+public class UserJDBC implements UserDAO{
+	
+	private static DataSource datasource;
+	private static Jdbc jdbcObject;
+	private static EncryptMethod encrypter;
+	
+	public void setDataSource(DataSource ds){
+		encrypter = new EncryptMethod();
+		this.datasource = ds;
+		jdbcObject = new Jdbc(datasource);
+	}
+	
+	public void createUser(String email, String username, String password)
+	{
+		String SQL = "insert into account (email, username, password) values (?, ?, ?)";
+		jdbcObject.update(SQL, email, username, password);
+		System.out.println("Created Record Name: " +"\nEmail: " + email + "\nUsername: " + username + "\nPW: " + password);
+	}
+	
+	public void createBounty(int id, String title, String criteria, String description, double value, String expiration)
+	{
+		String SQL = "insert into bounty (id, title, criteria, description, value, expiration) values (?, ?, ?, ?, ?, ?,)";
+		jdbcObject.update(SQL, id, title, criteria, description, value, expiration);
+		System.out.println("Created Record Name: " + title + "with ID: " + id);
+	}
+	
+	public User getUser(String email){
+		String SQL = "select * from legitTable where email=?";
+		User user = jdbcObject.queryForObject(SQL, new Object[]{email}, new UserMapper());
+		return user;
+	}
+	
+	public List<User> listUsers(){
+		String SQL = "select * from User";
+		List<User> users = jdbcObject.query(SQL, new UserMapper());
+		return users;
+	}
+	
+	public void deleteUser(String email){
+		String SQL = "delete from legitTable where email = ?";
+		jdbcObject.update(SQL, email);
+		System.out.println("Deleted " + email + " from Users");
+	}
+	
+	public void updateUser(String email, String password){
+		String SQL = "update legitTable set password = ? where email = ?";
+		
+		jdbcObject.update(SQL, password, email);
+		System.out.println("Updated " + email);
+	}
+
+	public Bounty getUser(int id)
+	{
+		String SQL = "select * from bounty where id=?";
+		Bounty bounty = jdbcObject.queryForObject
+	}
+	}
+}

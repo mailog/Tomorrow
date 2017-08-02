@@ -1,0 +1,17 @@
+package database;
+import java.util.List;
+import javax.sql.DataSource;
+public interface BountyDAO {
+	
+	public void setDataSource(DataSource ds);
+	
+	public void createBounty(int id, String title, String criteria, String description, double value, String expiration);
+	
+	public User getBounty(int id);
+	
+	public List<Bounty> listBounties();
+	
+	public void deleteBounty(int id);
+	
+	public void updateUser(String title, String criteria, String description, double value, String expiration);
+}

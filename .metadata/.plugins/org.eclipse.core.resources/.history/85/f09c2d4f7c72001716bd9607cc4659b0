@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Requests</title>
+<link rel="stylesheet" type="text/css" href="/css/toolbar.css" />
+<link rel="stylesheet" type="text/css" href="/css/requests.css" />
+</head>
+<body>
+
+<div class = "toolbar">
+	<a href = "/">
+		<button class = "tool_button"> Home </button>
+	</a>
+	<a href = "/bounties">
+		<button class = "tool_button"> Bounties </button>
+	</a>
+	<a href = "/requests">
+		<button class = "tool_button"> Requests </button>
+	</a>
+	<a href = "/about">
+		<button class = "tool_button"> About </button>
+	</a>
+	<a href = "/contact">
+		<button class = "tool_button"> Contact </button>
+	</a>
+</div>
+
+<div id = "requests">
+	<p>1) Title</p>
+	<input type = "text" name = "title"/>
+	<p>2) Criteria</p>
+	<input type = "text" name = "criteria"/>
+	<p>3) Description</p>
+	<input type = "text" name = "description"/>
+	<p>4) Value</p>
+	<input type = "text" name = "value"/>
+	<p>5) Expiration Date </p>
+	<input type = "text" name = "expiration"/>
+</div>
+</body>
+</html>

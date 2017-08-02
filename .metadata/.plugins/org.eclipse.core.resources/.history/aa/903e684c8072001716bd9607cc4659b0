@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bounties</title>
+<link rel="stylesheet" type="text/css" href="/css/toolbar.css" />
+<link rel="stylesheet" type="text/css" href="/css/bounties.css" />
+</head>
+<body>
+
+<div class = "toolbar">
+	<a href = "/">
+		<button class = "tool_button"> Home </button>
+	</a>
+	<a href = "/bounties">
+		<button class = "tool_button"> Bounties </button>
+	</a>
+	<a href = "/requests">
+		<button class = "tool_button"> Requests </button>
+	</a>
+	<a href = "/about">
+		<button class = "tool_button"> About </button>
+	</a>
+	<a href = "/contact">
+		<button class = "tool_button"> Contact </button>
+	</a>
+</div>
+
+<div id = "bounties">
+	<div class = "bounty">
+		<div class = "bounty_title">
+			<p>Bounty Title</p>
+		</div>	
+		<div class = "bounty_value">
+			<p>Bounty Value</p>
+		</div>
+		<div class = "bounty_desc">
+			<p>Bounty Description</p>
+		</div>
+		<div>
+		<div class = "bounty_period">
+			<p>Start Date - End Date</p>
+		</div>
+		<a href = "/">
+			<button class = "bounty_button"> Check it out! </button>
+		</a>
+		<div class = "bounty_proposer">
+			<p>Original Proposal By: Placeholder </p>
+		</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

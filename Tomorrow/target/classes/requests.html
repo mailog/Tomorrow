@@ -1,0 +1,64 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Requests</title>
+<link rel="stylesheet" type="text/css" href="/css/toolbar.css" />
+<link rel="stylesheet" type="text/css" href="/css/requests.css" />
+<link rel="stylesheet" type="text/css" href="/css/label.css" />
+</head>
+<body>
+
+<div class = "toolbar">
+	<a href = "/">
+		<button class = "tool_button"> Home </button>
+	</a>
+	<a href = "/requests">
+		<button class = "tool_button"> Requests </button>
+	</a>
+	<a href = "/about">
+		<button class = "tool_button"> About </button>
+	</a>
+	<a href = "/contact">
+		<button class = "tool_button"> Contact </button>
+	</a>
+	<a href = "/login">
+		<button class = "tool_button"> Login </button>
+	</a>
+	<a href = "/register">
+		<button class = "tool_button"> Register </button>
+	</a>
+	<a href = "/account">
+		<button class = "tool_button"> Account </button>
+	</a>
+</div>
+
+<div id = "requests">
+	<form class = "form-request" action = "#" th:action = "@{/requests}" th:object="${request}" method = "post">
+		<div id = "column1">
+			<div class = "label">
+				<p>1) Title</p>
+			</div>
+			<input type = "text" class = "inp_title" th:field = "*{title}"/>
+			<div class = "label">
+				<p>2) Criteria</p>
+			</div>
+			<input type = "text" class = "inp_criteria" th:field = "*{criteria}"/>
+			<div class = "label">
+				<p>3) Description</p>
+			</div>
+			<input type = "text" class = "inp_description" th:field = "*{description}"/>
+		</div>
+		<div id = "column2">
+			<div class = "label">
+				<p>4) Value</p>
+			</div>
+			<input type = "text" class = "inp_value" th:field = "*{value}"/>
+			<div class = "label">			
+				<p>5) Expiration Date </p>
+			</div>
+			<input type = "text" class = "inp_expiration" th:field = "*{expiration}"/>
+			<button class = "submit_button" value = "Submit"> Submit! </button>
+		</div>
+	</form>
+</div>
+</body>
+</html>

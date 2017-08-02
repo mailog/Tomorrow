@@ -1,0 +1,41 @@
+#requests
+{
+	background-color:#000000;
+	position: relative;
+	margin: 50px auto;
+	color:white;
+	width: 50%;
+	padding: 10px;
+}
+
+.inp_title
+{
+	width: 300px;
+}
+
+.inp_criteria
+{
+	width: 300px;
+	height: 150px;
+}
+
+.inp_description
+{
+	width: 300px;
+	height: 150px;
+}
+
+.inp_value
+{
+	
+}
+
+.inp_expiration
+{
+	
+}
+
+.submit_button
+{
+	background-color:black;
+}

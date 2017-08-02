@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" type="text/css" href="/css/toolbar.css" />
+</head>
+<body>
+
+<div class = "toolbar">
+	<a href = "/">
+		<button class = "tool_button"> Home </button>
+	</a>
+	<a href = "/bounties">
+		<button class = "tool_button"> Bounties </button>
+	</a>
+	<a href = "/requests">
+		<button class = "tool_button"> Requests </button>
+	</a>
+	<a href = "/about">
+		<button class = "tool_button"> About </button>
+	</a>
+	<a href = "/contact">
+		<button class = "tool_button"> Contact </button>
+	</a>
+</div>
+
+<div class = "contact">
+<h1>Contact</h1>
+<h2>This is us.</h2>
+<p>This is how to find us.</p>
+</div>
+
+</body>
+</html>

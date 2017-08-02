@@ -1,0 +1,77 @@
+#bounties
+{
+	position: relative;
+	margin: 50px auto;
+	color:white;
+	width: 50%;
+	padding: 10px;
+}
+
+.bounty
+{
+		height: 300px;
+		width: 800px;
+		color:white;
+		padding: 0px;
+		font-family: Browalia-New;
+		font-size: 13px;
+		font-weight:bold;
+		letter-spacing: 3px;
+		cursor: pointer;
+		border-bottom-style: none;
+		text-decoration:none;
+}
+
+.bounty_title
+{	
+	display:inline-block;
+	width: 500px;
+	height: 50px;
+	background-color: black;
+	border-style:solid;
+}
+
+.bounty_value
+{
+	display:inline-block;
+	width: 250px;
+	height:50px;
+	background-color: black;
+	border-style:solid;
+}
+
+.bounty_desc
+{
+	display:inline-block;
+	width: 500px;
+	height: 200px;
+	background-color: black;
+	border-style:solid;
+}
+
+.bounty_period
+{
+	display:inline-block;
+	width: 250px;
+	height:50px;
+	background-color: black;
+	border-style:solid;
+}
+
+.bounty_button
+{
+	display:inline-block;
+	width: 250px;
+	height:50px;
+	background-color: black;
+	border-style:solid;
+}
+
+.bounty_proposer
+{
+	display:inline-block;
+	width: 500px;
+	height: 50px;
+	background-color: black;
+	border-style:solid;
+}

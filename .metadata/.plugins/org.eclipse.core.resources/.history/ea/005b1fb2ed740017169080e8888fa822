@@ -1,0 +1,24 @@
+#about
+{	
+	border-radius:8px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#C0966C;
+	position: relative;
+	margin: 125px auto;
+	color:white;
+	height:496px;
+	width: 800px;
+	padding: 10px;
+	-webkit-box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.29);
+	-moz-box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.29);
+	box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.29);
+}
+
+.label
+{
+	float:initial;
+	background-color:white;
+	color:black;
+}

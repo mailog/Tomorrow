@@ -1,0 +1,9 @@
+package Security;
+
+public class EmailValidation {
+
+	public EmailValidation()
+	{
+		
+	}
+}

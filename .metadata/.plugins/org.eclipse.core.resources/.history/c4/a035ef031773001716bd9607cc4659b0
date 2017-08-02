@@ -1,0 +1,44 @@
+package database;
+
+public class Bounty {
+	public int id;
+	public String title;
+	public String criteria;
+	public String description;
+	public double value;
+	public String expiration;
+	
+	public Bounty(){	
+		this.id = 0;
+		this.title = "";
+		this.criteria = "";
+		this.description = "";
+		this.value = 0;
+		this.expiration = "";
+	}
+	
+	public void setEmail(String email){
+		this.email = email;
+	}
+	
+	public void setPlainPassword(String password){
+		plainPassword = password;
+	}
+	
+	public void setEncryptedPassword(byte[] password){
+		this.encryptedPassword = password;
+		
+	}
+	
+	public String getEmail(){
+		return email;
+	}
+	
+	public String getPlainPassword(){
+		return plainPassword;
+	}
+	
+	public byte[] getEncryptedPassword(){
+		return encryptedPassword;
+	}
+}

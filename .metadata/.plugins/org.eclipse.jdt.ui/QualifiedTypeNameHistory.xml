@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="Users.UserJDBCTemplate"/>
+<fullyQualifiedTypeName name="Users.BountyJDBC"/>
+<fullyQualifiedTypeName name="database.BountyJDBC"/>
+<fullyQualifiedTypeName name="database.UserJDBC"/>
+<fullyQualifiedTypeName name="database.Bounty"/>
+<fullyQualifiedTypeName name="database.User"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

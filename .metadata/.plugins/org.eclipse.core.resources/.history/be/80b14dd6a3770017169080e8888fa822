@@ -1,0 +1,17 @@
+package Security;
+
+public class EmailValidation {
+
+	public EmailValidation()
+	{
+		
+	}
+	
+	public boolean CheckEmailSyntax(String email)
+	{
+		boolean emailSyntax = true;
+		if(!email.contains("@"))
+			emailSyntax = false;
+		return emailSyntax;
+	}
+}

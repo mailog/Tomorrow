@@ -1,0 +1,48 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Register</title>
+<link rel="stylesheet" type="text/css" href="/css/toolbar.css" />
+<link rel="stylesheet" type="text/css" href="/css/register.css" />
+</head>
+<body>
+
+<div class = "toolbar">
+	<a href = "/">
+		<button class = "tool_button"> Home </button>
+	</a>
+	<a href = "/bounties">
+		<button class = "tool_button"> Bounties </button>
+	</a>
+	<a href = "/requests">
+		<button class = "tool_button"> Requests </button>
+	</a>
+	<a href = "/about">
+		<button class = "tool_button"> About </button>
+	</a>
+	<a href = "/contact">
+		<button class = "tool_button"> Contact </button>
+	</a>
+	<a href = "/login">
+		<button class = "tool_button"> Login </button>
+	</a>
+	<a href = "/register">
+		<button class = "tool_button"> Register </button>
+	</a>
+	<a href = "/account">
+		<button class = "tool_button"> Account </button>
+	</a>
+</div>
+
+<div id = "register">
+	<form class = "form-register" action = "#" th:action = "@{/register}" th:object="${register_user}" method = "post">
+		<p>Email</p>
+		<input type = "text" class = "inp_email" th:field = "*{email}"/>
+		<p>UserName</p>
+		<input type = "text" class = "inp_username" th:field = "*{username}"/>
+		<p>Password</p>
+		<input type = "password" class = "inp_password" th:field = "*{password}"/>
+		<button class = "submit_button" value = "Submit"> Submit! </button>
+	</form>
+</div>
+</body>
+</html>

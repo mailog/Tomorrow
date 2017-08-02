@@ -1,0 +1,14 @@
+package Security;
+
+public class EmailValidation {
+
+	public EmailValidation()
+	{
+		
+	}
+	
+	public boolean CheckEmailSyntax()
+	{
+		
+	}
+}
